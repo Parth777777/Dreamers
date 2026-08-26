@@ -1,26 +1,357 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Catchy Mager";
+  src:
+    url("/fonts/CatchyMager.woff2") format("woff2"),
+    url("/fonts/CatchyMager.woff") format("woff"),
+    url("/fonts/CatchyMager.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --paper: #b61d22;
+  --void: #FFF8F2;
+  --ink: #b61d22;
+  --white: #b61d22;
+  --red: #b61d22;
+  --sky: #FFF8F2;
+  --muted: color-mix(in srgb, var(--paper) 58%, var(--void));
+  --cream: var(--void);
+  --gold: var(--red);
+  --tally: var(--red);
+  --gel: var(--red);
+  --graphite: var(--muted);
+  --plaster: var(--void);
+  --gate: var(--void);
+  --nav-rail-width: 0px;
+  --nav-rail-inset: 1rem;
+  --background: var(--void);
+  --foreground: var(--paper);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-btn: 9999px;
 }
 
 @theme inline {
-  --color-background: var(--background);
+  --color-void: var(--void);
+  --color-white: var(--white);
+  --color-red: var(--red);
+  --color-cream: var(--white);
+  --color-gold: var(--red);
+  --color-muted: var(--muted);
+  --color-screen: var(--void);
+  --color-ink: var(--ink);
+  --color-tally: var(--red);
+  --color-gel: var(--red);
+  --color-graphite: var(--muted);
+  --color-plaster: var(--plaster);
+  --color-sky: var(--sky);
+  --color-paper: var(--paper);
+  --color-gate: var(--gate);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-display: "Catchy Mager", "Times New Roman", ui-serif, Georgia, serif;
+  --font-sans: "Open Sauce One", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  background: var(--void);
+  color: var(--white);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  letter-spacing: -0.018em;
+}
+
+
+
+.font-display,
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  font-style: normal;
+}
+
+.font-mono {
+  font-family: var(--font-sans);
+  letter-spacing: 0.04em;
+}
+
+::selection {
+  background: var(--red);
+  color: #fffcfb;
+}
+
+.film-track,
+.rail-track,
+.review-rail,
+.fan-stage {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.film-track::-webkit-scrollbar,
+.rail-track::-webkit-scrollbar,
+.review-rail::-webkit-scrollbar,
+.fan-stage::-webkit-scrollbar {
+  display: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+.glow-orb {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(90px);
+  animation: orb-drift 14s ease-in-out infinite;
+}
+
+.glow-orb-a {
+  top: -8%;
+  right: -6%;
+  width: 42vw;
+  height: 42vw;
+  background: color-mix(in srgb, var(--red) 38%, transparent);
+}
+
+.glow-orb-b {
+  bottom: 8%;
+  left: -10%;
+  width: 34vw;
+  height: 34vw;
+  background: color-mix(in srgb, var(--red) 18%, transparent);
+  animation-delay: -6s;
+}
+
+@keyframes orb-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(6%, -8%) scale(1.18);
+    opacity: 0.85;
+  }
+}
+
+.glass-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: rgba(84, 11, 5, 0.55);
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  border: 1px solid rgba(255, 252, 251, 0.12);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  transition:
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s ease,
+    border-color 0.5s ease;
+}
+
+.glass-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(255, 252, 251, 0.22) 50%,
+    transparent 65%
+  );
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+
+.glass-card:hover {
+  border-color: rgba(245, 49, 5, 0.7);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  transform: translateY(-6px);
+}
+
+.glass-card:hover::after {
+  animation: card-shine 0.9s ease;
+}
+
+@keyframes card-shine {
+  to {
+    transform: translateX(120%);
+  }
+}
+
+.text-glow {
+  text-shadow: 0 0 22px color-mix(in srgb, var(--red) 55%, transparent);
+}
+
+.glass-nav {
+  background: rgba(84, 11, 5, 0.88);
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  border-bottom: 1px solid rgba(255, 252, 251, 0.1);
+}
+
+.nav-wheel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 35;
+  width: var(--nav-rail-width);
+  height: 100dvh;
+  padding: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.nav-wheel__wheel {
+  pointer-events: auto;
+  height: 100%;
+}
+
+.nav-wheel__wheel.option-wheel {
+  overflow: hidden;
+}
+
+.nav-wheel__wheel .option-wheel__item {
+  left: var(--nav-rail-inset);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.nav-wheel__wheel .option-wheel__item--selected {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .nav-wheel {
+    display: none;
+  }
+}
+
+.mesh-cube {
+  transform-style: preserve-3d;
+}
+
+.mesh-slab {
+  height: 100%;
+  width: 100%;
+  transform: rotateY(-18deg) rotateX(8deg);
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  border: 1px solid color-mix(in srgb, var(--paper) 16%, transparent);
+  background: var(--void);
+}
+
+.face-front {
+  transform: translateZ(48px);
+  background: var(--red);
+}
+
+.face-back {
+  transform: rotateY(180deg) translateZ(48px);
+}
+
+.face-left {
+  transform: rotateY(-90deg) translateZ(48px);
+}
+
+.face-right {
+  transform: rotateY(90deg) translateZ(48px);
+  background: var(--paper);
+}
+
+.face-top {
+  transform: rotateX(90deg) translateZ(48px);
+  background: var(--void);
+}
+
+.field-grain {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.42;
+}
+
+.field-grain--dots {
+  background-image: radial-gradient(color-mix(in srgb, var(--paper) 28%, transparent) 1px, transparent 1.1px);
+  background-size: 20px 20px;
+  mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 82%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 82%, transparent);
+}
+
+.field-grain--plus {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28'><path d='M13.5 8v11M8 13.5h11' stroke='rgba(255,252,251,0.28)' stroke-width='1' fill='none'/></svg>");
+  background-size: 28px 28px;
+  mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+}
+
+.field-grain--grid {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--paper) 10%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--paper) 10%, transparent) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(ellipse at 50% 40%, #000 35%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 40%, #000 35%, transparent 80%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-orb,
+  .glass-card:hover::after {
+    animation: none;
+  }
+
+  .glass-card:hover {
+    transform: none;
+  }
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(800px);
+    opacity: 0;
+  }
+}
+
+.animate-shooting-star {
+  animation: shooting-star linear forwards;
 }

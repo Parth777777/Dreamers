@@ -1,0 +1,207 @@
+CASE STUDY
+
+
+Objective :
+❑  Increase Organic website traffic. 
+❑  Focus on reducing bounce rate of the overall website specially on Blog 
+section.
+❑  Improve Keyword ranking on Search Engine Result pages.
+Challenges :
+❑
+ L ow traffic due to missing basics
+❑
+ Absence on brand searches
+❑
+ 90% blog bounce rate
+❑
+ Targeted keywords absent
+Result
+Website  Visit increased by  120%
+The Bounce rate reduced by 90% to 60%
+Keywords Ranking Improvement by 100%
+Strategy on Google:
+❑
+ Adding popular keywords for Google visibility
+❑
+ Improve Domain Authority
+❑
+ Reduce Bounce Rate
+❑
+ Enhance search visibility for brand terms
+❑
+ Adding content for product awareness
+❑
+ Adding 80-90 Blog Articles
+❑
+ Increasing SEO Score
+❑
+ Brand and PDP Page Optimization
+Campaign period (June‘22 to Sep’23)
+Search Engine 
+Optimization
+Client: Omnigel
+
+
+Innovative Approach
+Adopted an Innovative Approach at par with Google Algorithm updates:
+• Revamp content emphasizing search intent & user ex perience (UX ) through topic clusters and pillar 
+pages.
+• AI-Driven Content Analysis and Optimization L everaging Structured Data and Rich Snippets
+• Implemented E.E.A.T. guidelines
+• Integrated video content that aligned with tex tual content strategy.
+Campaign period (June‘22 to Sep’23)
+Result
+❑ Website  Visit increased by  120%
+❑ The Bounce rate reduced by 90% to 60%
+❑ Keywords Ranking Improvement by 100%
+
+
+Organic Traffic Growth
+Result
+• Website  Visit increased by 120%
+• We observed a consistent and significant 
+month-on-month increase in Users over 
+the past 15 months, demonstrating the 
+positive impact of our SEO efforts. 
+• This has impacted Increase in Domain 
+Authority from 18 to 24. 
+• Increase in Organic Traffic has Improved 
+website SEO score by 96%.
+Resulting in increased traffic to our 
+website. Currently, our blog section 
+contributes to 81% of the overall 
+website traffic.
+19%
+81%
+Traffic Analysis
+Other Traffic Blog Traffic
+5200 5435 5818 6209 6734 7165 7608 8121 8588 8839 9183 9323 9640
+10546
+11200 11500
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+Month on Month Users
+
+
+Reducing Bounce Rate
+Result
+In June '22, our website experienced a 
+high bounce rate of 90%. However, 
+through the implementation of specific 
+action points, we successfully reduced 
+the bounce rate to 60%.
+Problems : 
+• Missing on-page optimization in overall blog pages.
+• There is poor quality content in the existing blog.
+• Keywords are missing in the content.
+• Images and infographics are not being used.
+• Blog pages are not mobile-friendly.
+• The page loading time is slow.
+Action Taken :
+• Revamping old content with the Yoast plugin to enhance quality.
+• Utilizing AI tools for content creation to boost relevance.
+• Applying the Hub-and-Spoke strategy for effective keyword utilization.
+• Engaging users with images and infographics.
+• Optimizing on page & technical issues for improved website performance.
+90.03% 88.26% 86.10% 83.93% 82.13%
+76.77% 74.47% 73.68% 73.61% 72.79% 71.97% 70.70% 69.44%
+62.00% 63.40%
+60.12%
+0.00%
+10.00%
+20.00%
+30.00%
+40.00%
+50.00%
+60.00%
+70.00%
+80.00%
+90.00%
+100.00%
+Bounce Rate
+
+
+Keyword Achievement
+Result
+• Successfully we performed total 
+2177 keywords, and we identified 
+that 263 Keywords are ranking on 
+first page in search results. 
+• Comparing this to June '22, where 
+900 keywords were initially 
+ranking, we observed a remarkable 
+100% improvement in keyword 
+rankings.
+We achieved 344 keywords on the 
+top 5 pages of search results for 
+category “Pain relief” with a total 
+search volume of 181,040. Here we 
+successfully secured 12% keywords 
+on the first page of Search Engine 
+Results.
+948 1012 1021
+1232 1310 1388 1405 1480 1504
+1620
+1747 1804
+1927 2003
+2110 2177
+0
+500
+1000
+1500
+2000
+2500
+Organic Keywords Growth
+71
+77
+63
+58
+75
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+1-10 11-20 21-30 31-40 41-50
+Keywords Ranking Position for “Pain Relief”
+
+
+Traffic Performance 
+• The data illustrates user visits across all channels, with organic traffic performing the highest and mobile pages receiving the most visits.
+Source: Similarweb
+
+
+Month on Month Organic Users & Bounce Rate
+• The graph shows a consistent and substantial month-on-month growth in sessions, indicating the positive impact of our SEO efforts. 
+• We obtained 14 months of data from the UA tool, thanks to GA4.
+Source: Google Analytics UA
+
+
+Search Console Performance 
+• The provided data, spanning 14 months from our search console, offers insights into our overall traffic. 
+• Notably, 81% originates from the blog section, while the remaining 19% is divided between product and home pages.
+Source: Google Analytics & GSC
+Overall traffic Blog Traffic
+
+Keywords Performance
+• The data above highlights our keyword performance, showcasing improvements in organic keywords and keyword positions, 
+categorized by intent.
+Source: Semrush
+
+
+Competition Analysis
+• In our competitor analysis, we found Omnigel is Leading on top in Total visits
+Source: Similar web
+
+Thank You

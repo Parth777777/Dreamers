@@ -1,0 +1,51 @@
+.brand-wall-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.brand-wall-grid__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3 / 2;
+  padding: 1.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid color-mix(in srgb, var(--paper) 12%, transparent);
+  background: #f6f1ee;
+}
+
+.brand-wall-grid__tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  filter: grayscale(1);
+}
+
+@media (min-width: 480px) {
+  .brand-wall-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@keyframes color-sweep {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-color-sweep {
+  background: linear-gradient(
+    to right,
+    var(--paper) 0%,
+    var(--paper) 30%,
+    var(--red) 50%,
+    var(--paper) 70%,
+    var(--paper) 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: color-sweep 4s linear infinite;
+}

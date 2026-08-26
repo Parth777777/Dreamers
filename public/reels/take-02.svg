@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" fill="#243044"/>
+  <rect x="80" y="70" width="1440" height="760" fill="#14181F"/>
+  <text x="120" y="160" fill="#E11D2E" font-family="monospace" font-size="28">TAKE 02 � MP4</text>
+  <text x="120" y="480" fill="#F7F4EE" font-family="sans-serif" font-size="72" font-weight="600">Drop a local file</text>
+</svg>
