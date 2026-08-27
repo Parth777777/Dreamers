@@ -110,7 +110,7 @@ export function AwesomeHero() {
           style={{ x: textX }}
         >
           {/* text-[6.5vw] usually fits a long phrase cleanly on one line across desktop */}
-          <h1 className="text-[10vw] md:text-[8vw] lg:text-[6.5vw] leading-[0.95] tracking-tighter text-center text-red drop-shadow-2xl whitespace-nowrap">
+          <h1 className="text-[8vw] md:text-[8vw] lg:text-[6.5vw] leading-[0.95] tracking-tighter text-center text-red drop-shadow-2xl whitespace-nowrap">
             Dreamers creative studios
           </h1>
         </motion.div>

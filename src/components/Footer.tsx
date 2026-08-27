@@ -28,9 +28,6 @@ export function Footer() {
             <a href={`mailto:${site.email}`}>{site.email}</a>
             <p>{site.locationLabel}</p>
             <p>© {new Date().getFullYear()}</p>
-            <p className="mt-2 text-xs">
-              Made with Love by <a href="https://www.linkedin.com/in/paarthdoshi/" target="_blank" rel="noopener noreferrer" className="hover:text-red transition-colors underline underline-offset-2">Parth</a>
-            </p>
           </div>
         </div>
       </div>

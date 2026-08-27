@@ -58,6 +58,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `console.log("%cMade with love by Parth 💖", "color: #ff3366; font-size: 24px; font-weight: bold; font-family: sans-serif;");`
+          }}
+        />
         <CustomCursor />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
